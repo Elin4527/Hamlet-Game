@@ -1,0 +1,2 @@
+[Tutorial: To Be or Not to Be] @n
+Welcome to Hamlet, the video game! You are Hamlet the prince of Denmark. In this game go through levels related to events in the play and beat all stages to win the game. This game is played solely with the keyboard. Hamlet can be moved around using the directional keys on the keyboard. (Messages can be sped up and closed with the space bar) @w @c @h1.5 Try picking up that item on the ground! @ep10~3~Fist~Scripts/fistDescription.txt

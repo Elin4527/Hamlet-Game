@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B44CE10C-3F15-4452-BB36-56CEDB59E2E6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WildVEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\..\..\Lib\$(PlatformName)$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\Temp\$(ProjectName)$(PlatformName)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\..\..\Lib\$(PlatformName)$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\Temp\$(ProjectName)$(PlatformName)$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>WildVEngineStd.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\Lib\sfml-static\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\Lib\$(PlatformName)$(Configuration)\;$(SolutionDir)..\..\..\Lib\sfml-static\lib\Debug</AdditionalLibraryDirectories>
+    </Lib>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>sfml-graphics-s-d.lib; sfml-audio-s-d.lib; sfml-network-s-d.lib; sfml-window-s-d.lib; sfml-system-s-d.lib;opengl32.lib;gdi32.lib;freetype.lib;jpeg.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;ws2_32.lib;winmm.lib;</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>WildVEngineStd.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\Lib\sfml-static\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\Lib\$(PlatformName)$(Configuration)\;$(SolutionDir)..\..\..\Lib\sfml-static\lib\Release</AdditionalLibraryDirectories>
+    </Lib>
+    <Lib>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>sfml-graphics-s.lib; sfml-audio-s.lib; sfml-network-s.lib; sfml-window-s.lib; sfml-system-s.lib;opengl32.lib;gdi32.lib;freetype.lib;jpeg.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;ws2_32.lib;winmm.lib;</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Abilities\AbilitySet.hpp" />
+    <ClInclude Include="..\Abilities\IAbility.hpp" />
+    <ClInclude Include="..\Classes\GameTimer.hpp" />
+    <ClInclude Include="..\Classes\ItemGlossary.hpp" />
+    <ClInclude Include="..\Classes\MonsterIndex.hpp" />
+    <ClInclude Include="..\Classes\MonsterSpawner.hpp" />
+    <ClInclude Include="..\Classes\ResourceManager.hpp" />
+    <ClInclude Include="..\Classes\StateManager.hpp" />
+    <ClInclude Include="..\Collision\THitbox.hpp" />
+    <ClInclude Include="..\Collision\IHitBox.hpp" />
+    <ClInclude Include="..\Event\IEvent.hpp" />
+    <ClInclude Include="..\Event\MapChangeEvent.hpp" />
+    <ClInclude Include="..\Event\PickupEvent.hpp" />
+    <ClInclude Include="..\Event\TextEvent.hpp" />
+    <ClInclude Include="..\Graphics2D\AnimatedSprite.hpp" />
+    <ClInclude Include="..\Graphics2D\Animation.hpp" />
+    <ClInclude Include="..\Graphics2D\DynamicGraphic.hpp" />
+    <ClInclude Include="..\Graphics2D\TextEffect.hpp" />
+    <ClInclude Include="..\Interfaces\IApp.hpp" />
+    <ClInclude Include="..\Interfaces\IResourceHandler.hpp" />
+    <ClInclude Include="..\Interfaces\IState.hpp" />
+    <ClInclude Include="..\Interfaces\TResource.hpp" />
+    <ClInclude Include="..\Interfaces\TResourceHandler.hpp" />
+    <ClInclude Include="..\Items\EquipItem.hpp" />
+    <ClInclude Include="..\Items\IItem.hpp" />
+    <ClInclude Include="..\Math\MathUtil.hpp" />
+    <ClInclude Include="..\Object\Battler.hpp" />
+    <ClInclude Include="..\Object\Enemy.hpp" />
+    <ClInclude Include="..\Object\MapCharacter.hpp" />
+    <ClInclude Include="..\Object\IObject.hpp" />
+    <ClInclude Include="..\Object\Player.hpp" />
+    <ClInclude Include="..\Object\PlayerGUI.hpp" />
+    <ClInclude Include="..\Object\TextBox.hpp" />
+    <ClInclude Include="..\Object\Tile.hpp" />
+    <ClInclude Include="..\Object\TileMap.hpp" />
+    <ClInclude Include="..\WildVEngine.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Abilities\AbilitySet.cpp" />
+    <ClCompile Include="..\Abilities\IAbility.cpp" />
+    <ClCompile Include="..\Classes\GameTimer.cpp" />
+    <ClCompile Include="..\Classes\ItemGlossary.cpp" />
+    <ClCompile Include="..\Classes\MonsterIndex.cpp" />
+    <ClCompile Include="..\Classes\MonsterSpawner.cpp" />
+    <ClCompile Include="..\Classes\ResourceManager.cpp" />
+    <ClCompile Include="..\Classes\StateManager.cpp" />
+    <ClCompile Include="..\Collision\IHitBox.cpp" />
+    <ClCompile Include="..\Event\IEvent.cpp" />
+    <ClCompile Include="..\Event\MapChangeEvent.cpp" />
+    <ClCompile Include="..\Event\PickupEvent.cpp" />
+    <ClCompile Include="..\Event\TextEvent.cpp" />
+    <ClCompile Include="..\Graphics2D\AnimatedSprite.cpp" />
+    <ClCompile Include="..\Graphics2D\Animation.cpp" />
+    <ClCompile Include="..\Graphics2D\DynamicGraphic.cpp" />
+    <ClCompile Include="..\Graphics2D\TextEffect.cpp" />
+    <ClCompile Include="..\Interfaces\IApp.cpp" />
+    <ClCompile Include="..\Interfaces\IResourceHandler.cpp" />
+    <ClCompile Include="..\Interfaces\IState.cpp" />
+    <ClCompile Include="..\Items\EquipItem.cpp" />
+    <ClCompile Include="..\Items\IItem.cpp" />
+    <ClCompile Include="..\Math\MathUtil.cpp" />
+    <ClCompile Include="..\Object\Battler.cpp" />
+    <ClCompile Include="..\Object\Enemy.cpp" />
+    <ClCompile Include="..\Object\MapCharacter.cpp" />
+    <ClCompile Include="..\Object\IObject.cpp" />
+    <ClCompile Include="..\Object\Player.cpp" />
+    <ClCompile Include="..\Object\PlayerGUI.cpp" />
+    <ClCompile Include="..\Object\TextBox.cpp" />
+    <ClCompile Include="..\Object\Tile.cpp" />
+    <ClCompile Include="..\Object\TileMap.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Hamlet">
+      <UniqueIdentifier>{31639b7c-954d-4ed3-b161-af4f79cb922b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hamlet\Application">
+      <UniqueIdentifier>{cc6c8f86-17d7-4026-ba72-28fe48254ecf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hamlet\States">
+      <UniqueIdentifier>{4a2daea5-768a-458d-b56e-f1af6d4b6578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hamlet\Items">
+      <UniqueIdentifier>{edd1221b-7a81-4ee9-b8d2-2b75d9e739e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hamlet\Abilities">
+      <UniqueIdentifier>{287bc828-4b98-4867-aeaa-b9a1fe659fe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hamlet\Enemies">
+      <UniqueIdentifier>{96307988-0863-476f-bac1-6dd7c980b132}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Main.cpp">
+      <Filter>Hamlet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\States\OverworldState.cpp">
+      <Filter>Hamlet\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Application\HamletApp.cpp">
+      <Filter>Hamlet\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\States\MainMenuState.cpp">
+      <Filter>Hamlet\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Items\Fist.cpp">
+      <Filter>Hamlet\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Abilities\Punch.cpp">
+      <Filter>Hamlet\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Enemies\EvilHamlet.cpp">
+      <Filter>Hamlet\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\States\DeadState.cpp">
+      <Filter>Hamlet\States</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Enemies\Ghost.cpp">
+      <Filter>Hamlet\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Items\Sword.cpp">
+      <Filter>Hamlet\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Abilities\Thrust.cpp">
+      <Filter>Hamlet\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Abilities\LSlash.cpp">
+      <Filter>Hamlet\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Abilities\RSlash.cpp">
+      <Filter>Hamlet\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Abilities\Flurry.cpp">
+      <Filter>Hamlet\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Enemies\Polonius.cpp">
+      <Filter>Hamlet\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Enemies\Laertes.cpp">
+      <Filter>Hamlet\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Enemies\Claudius.cpp">
+      <Filter>Hamlet\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\States\VictoryState.cpp">
+      <Filter>Hamlet\States</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\States\OverworldState.hpp">
+      <Filter>Hamlet\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Application\HamletApp.hpp">
+      <Filter>Hamlet\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="..\States\MainMenuState.hpp">
+      <Filter>Hamlet\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Items\Fist.hpp">
+      <Filter>Hamlet\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Abilities\Punch.hpp">
+      <Filter>Hamlet\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Enemies\EvilHamlet.hpp">
+      <Filter>Hamlet\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\States\DeadState.hpp">
+      <Filter>Hamlet\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Enemies\Ghost.hpp">
+      <Filter>Hamlet\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Items\Sword.hpp">
+      <Filter>Hamlet\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Abilities\Thrust.hpp">
+      <Filter>Hamlet\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Abilities\LSlash.hpp">
+      <Filter>Hamlet\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Abilities\RSlash.hpp">
+      <Filter>Hamlet\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Abilities\Flurry.hpp">
+      <Filter>Hamlet\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Enemies\Polonius.hpp">
+      <Filter>Hamlet\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Enemies\Laertes.hpp">
+      <Filter>Hamlet\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Enemies\Claudius.hpp">
+      <Filter>Hamlet\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\States\VictoryState.hpp">
+      <Filter>Hamlet\States</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

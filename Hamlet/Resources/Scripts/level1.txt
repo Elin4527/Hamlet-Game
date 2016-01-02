@@ -1,0 +1,5 @@
+[Level 1: Oh, that this, too sullied flesh would melt] @n
+Hamlet's father has died and his mother has remarried his uncle. Hamlet would kill himself had
+God not fixed his canon 'gainst self-slaughter. How weary, stale, flat and unprofitable seem to
+Hamlet all the uses of the world. Fend off these suicidal thoughts by defeating
+@p10 . @p10 . @p10 . @p20 yourself. It is too soon for the hero to die, so defeat 15 Hamlets.
